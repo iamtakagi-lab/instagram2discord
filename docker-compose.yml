@@ -1,7 +1,7 @@
 version: '3.8'
 services:
   instagram2discord:
-    build: .
+    image: iamtakagi/instagram2discord
     environment:
       TZ: Asia/Tokyo
       USERNAME: xxx
