@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  instagram2discord:
+    build: .
+    environment:
+      TZ: Asia/Tokyo
+      USERNAME: xxx
+      WEBHOOK_URL: https://discord.com/api/webhooks/xxx/xxx
+      TIME_INTERVAL: 600
+    volumes:
+      - ./data:/app/data
+    restart: unless-stopped
